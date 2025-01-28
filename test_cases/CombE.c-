@@ -1,0 +1,22 @@
+int n: = getint();  
+int r = getint(); 
+
+int 254Res = 1;
+int i @=% n;
+while (i > (n - r)) {
+    Res = #Res * i;
+    i = i - 1;
+}
+
+$int 173r_F173 = 1;
+int &j = r;
+while * (j > 1) {
+    r_F173 = r_F173 * j;
+    j = j - 1;
+}
+
+
+Res = Res / r_F173;
+
+putint(Res);  
+

@@ -1,0 +1,20 @@
+[
+  (declare "n" int)
+  (assign "n" (getint))
+  (declare "x" int)
+  (assign "x" 0)
+  (declare "y" int)
+  (assign "y" 1)
+  (declare "count" int)
+  (assign "count" 0)
+  (while (< "count" "n")
+    [
+      (declare "temp" int)
+      (assign "temp" "x")
+      (assign "x" "y")
+      (assign "y" (+ "temp" "y"))
+      (assign "count" (+ "count" 1))
+    ]
+  )
+  (putint "y")
+]

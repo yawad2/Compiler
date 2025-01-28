@@ -1,0 +1,12 @@
+int x = 10;
+int y = 20;
+
+if (x === y) {  
+    putint(1);
+} 
+putint(0);  
+
+if (x > y) 
+    putint(n;
+else
+    putint(m);

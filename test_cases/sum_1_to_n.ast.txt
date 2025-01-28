@@ -1,0 +1,14 @@
+[
+  (declare "n" int)
+  (assign "n" (getint))
+  (declare "accum" int)
+  (assign "accum" 0)
+  (assign "i" 1)
+  (while (<= "i" "n")
+    [
+      (assign "accum" (+ "accum" "i"))
+      (assign "i" (+ "i" 1))
+    ]
+  )
+  (putint "accum")
+]

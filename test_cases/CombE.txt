@@ -1,0 +1,37 @@
+line 1:5 token recognition error at: ':'
+line 4:4 extraneous input '254' expecting IDENTIFIER
+line 5:6 token recognition error at: '@'
+line 5:8 token recognition error at: '%'
+line 7:10 token recognition error at: '#'
+line 11:0 token recognition error at: '$'
+line 11:5 extraneous input '173' expecting IDENTIFIER
+line 12:4 token recognition error at: '&'
+line 13:6 extraneous input '*' expecting '('
+[
+  (declare "n" int)
+  (assign "n" (getint))
+  (declare "r" int)
+  (assign "r" (getint))
+  (declare "Res" int)
+  (assign "Res" 1)
+  (declare "i" int)
+  (assign "i" "n")
+  (while (> "i" (- "n" "r"))
+    [
+      (assign "Res" (* "Res" "i"))
+      (assign "i" (- "i" 1))
+    ]
+  )
+  (declare "r_F173" int)
+  (assign "r_F173" 1)
+  (declare "j" int)
+  (assign "j" "r")
+  (while (> "j" 1)
+    [
+      (assign "r_F173" (* "r_F173" "j"))
+      (assign "j" (- "j" 1))
+    ]
+  )
+  (assign "Res" (/ "Res" "r_F173"))
+  (putint "Res")
+]

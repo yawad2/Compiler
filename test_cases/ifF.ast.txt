@@ -1,0 +1,12 @@
+line 4:8 no viable alternative at input 'if(x==='
+line 10:12 no viable alternative at input 'if(x>y)putint(n;'
+line 10:12 missing ')' at ';'
+line 11:0 extraneous input 'else' expecting {<EOF>, 'int', 'float', 'if', 'while', '{', IDENTIFIER}
+
+Exception in thread "main" java.lang.NullPointerException: Cannot invoke "antlr.project2.cminus.cminusParser$ConditionContext.cmp_op()" because "ctx" is null
+        at ast.cminus.Condition.fromContext(Condition.java:22)
+        at ast.cminus.Statement.fromContext(Statement.java:68)
+        at ast.cminus.Statement.fromContext(Statement.java:29)
+        at ast.cminus.BlockItem.fromContext(BlockItem.java:17)
+        at ast.cminus.Program.fromContext(Program.java:33)
+        at ast.cminus.parse2ast.main(parse2ast.java:34)

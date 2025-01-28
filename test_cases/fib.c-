@@ -1,0 +1,15 @@
+int n = getint();
+
+int x = 0;
+int y = 1;
+
+int count = 0;
+
+while (count < n) {
+    int temp = x;
+    x = y;
+    y = temp + y;
+    count = count + 1;
+}
+
+putint(y);

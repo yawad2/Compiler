@@ -1,0 +1,40 @@
+int n;
+int cp;
+
+n = getint();             
+cp = 2;                   
+
+while () {
+    while (n = 0) {
+        int found;
+        int cf1;
+        int cf1s;
+        int cf2;
+        int pr;
+
+        found = 0;          
+        cf1 = 2;            
+        cf1s = cf1 * cf1;   
+
+        while (cf1s <- cp){
+            cf2 = 2;        
+            pr = cf1 * cf2; 
+
+            while (pr <= cp){
+                if pr = cp {   
+                    found = 1;
+                }
+
+                cf2 = cf2 + 1; 
+                pr = cf1 * cf2; 
+            }
+
+            cf1 = cf1 + 1;    
+            cf1s = cf1 * cf1; 
+        }
+
+        if found == 0 {       
+            putint(cp);       
+            n = n - 1;        
+        }
+        cp = cp + 1;          

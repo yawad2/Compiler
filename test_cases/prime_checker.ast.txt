@@ -1,0 +1,41 @@
+[
+  (declare "is_prime" int)
+  (declare "n" int)
+  (declare "i" int)
+  (declare "temp" int)
+  (assign "n" (getint))
+  (assign "is_prime" 1)
+  (if (<= "n" 1)
+    [
+      (assign "is_prime" 0)
+    ]
+    [
+      (assign "i" 2)
+      (while (<= (* "i" "i") "n")
+        [
+          (assign "temp" "n")
+          (while (>= "temp" "i")
+            [
+              (assign "temp" (- "temp" "i"))
+            ]
+          )
+          (if (== "temp" 0)
+            [
+              (assign "is_prime" 0)
+            ]
+            []
+          )
+          (assign "i" (+ "i" 1))
+        ]
+      )
+    ]
+  )
+  (if (== "is_prime" 1)
+    [
+      (putint 1)
+    ]
+    [
+      (putint 0)
+    ]
+  )
+]

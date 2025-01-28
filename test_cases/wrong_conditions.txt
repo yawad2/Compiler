@@ -1,0 +1,7 @@
+line 7:7 mismatched input ')' expecting {'(', IDENTIFIER, INTEGER, FLOAT}
+line 8:13 mismatched input '=' expecting {'==', '!=', '<', '>', '<=', '>=', '+', '-', '*', '/'}
+line 19:21 extraneous input '-' expecting {'(', IDENTIFIER, INTEGER, FLOAT}
+line 24:19 no viable alternative at input 'ifpr'
+line 24:27 missing ';' at '{'
+line 36:11 no viable alternative at input 'iffound'
+line 40:30 extraneous input '<EOF>' expecting {'int', 'float', 'if', 'while', '{', '}', IDENTIFIER
